@@ -1,0 +1,1 @@
+~/.virtualenvs/dotworks2022/bin/python manage.py runserver 127.0.0.1:62223 --settings=config.settings.local

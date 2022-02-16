@@ -1,0 +1,44 @@
+[
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "name": "dotworks2022",
+        "domain": "dotworks.jeknowledge.com"
+    }
+},
+{
+    "model": "imprint.ownership",
+    "pk": 1,
+    "fields": {
+        "company_name": "jeKnowledge",
+        "first_name": "Recursos",
+        "last_name": "Humanos",
+        "email": "rh@jeknowledge.com",
+        "street": "Departamento de Física, Rua Larga",
+        "postal_code": "3004-516",
+        "place": "Coimbra",
+        "country_code": "PT",
+        "country_name": "Portugal",
+        "vat_number": "508662435",
+        "logo": ""
+    }
+},
+{
+    "model": "imprint.bankaccount",
+    "pk": 2,
+    "fields": {
+        "owner": 1,
+        "name": "UBS Switzerland",
+        "street": "Bahnhofstrasse 45",
+        "postal_code": "8001",
+        "place": "Zurich",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "iban": "CH92 0000 0000 0000 0000 01",
+        "number": "0.00.001",
+        "bic": "UBSWCHZH80A",
+        "currency_code": "CHF"
+    }
+}
+]

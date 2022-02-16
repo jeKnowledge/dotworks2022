@@ -1,0 +1,3 @@
+export DJANGO_SETTINGS_MODULE=config.settings.local
+export PYTHONPATH=$HOME/dotworks2022
+~/.virtualenvs/dotworks2022/bin/python $1 $2 $3 $4 $5 $6
