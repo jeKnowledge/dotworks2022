@@ -1,0 +1,54 @@
+{% extends 'base2.html' %}
+
+{% load static %}
+{% block imports %}
+<link rel="stylesheet" href="{% static 'css/pasteditions.css' %}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+
+{% endblock %}
+
+{% block content %}
+
+
+<section id="section1">
+  <div class="gallery-container">
+    <div id="slider">
+
+      <div class="btn-bar">
+        <div id="buttons">
+          <a href="javascript:void();" class="control_next"></a>
+          <a href="javascript:void();" class="control_prev">
+          </a>
+        </div>
+      </div>
+      <ul>
+        {% for image in pastEP %}
+        <li> <img src="{{image.image}}" alt="" /></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="section2">
+  {% for past in pastE %}
+  <div class="past-edition">
+    <div class="year-container" href="#">
+      <h6 class="year">{{past.year}}</h6>
+    </div>
+    <div class="vl"></div>
+    <div class="quote-container">
+      <p class="quote-frase"> {{past.description}}
+
+      </p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+
+<script src="{% static 'js/pasteditions.js' %}"></script>
+
+{% endblock %}

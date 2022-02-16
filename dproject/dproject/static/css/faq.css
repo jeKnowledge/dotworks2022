@@ -1,0 +1,126 @@
+/*FAQ*/
+
+#faq-nav {
+    font-family: 'Montserrat-SemiBold';
+}
+
+#section1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#faqs h2 {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Montserrat-Bold';
+    color: #004B84;
+    text-align: center;
+}
+
+#header-faqs {
+    margin-bottom: 37px;
+}
+
+#faqs {
+    margin: 214px 0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer {
+    display: none;
+    border-radius: 34px;
+    animation: sweep 0.5s ease-in-out;
+}
+
+.question {
+    background-color: #FFFEF3;
+    cursor: pointer;
+    padding: 0 0 20px 0;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+.question.active {
+    background-color: #FFFEF3;
+}
+
+.faq-container {
+    border: 1px solid #004B84;
+    box-sizing: border-box;
+    border-radius: 34px;
+    width: 100%;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+
+.faq-container:hover {
+    border: 1px solid #DB3A50;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -70px;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.question p {
+    position: relative;
+    z-index: 1;
+    background-color: #FFFEF3;
+    border-radius: 50px;
+    margin: 0 34px 0 34px;
+    padding: 18px 0 0px 0;
+    width: 90%;
+}
+
+.icon {
+    padding-top: 18px;
+    padding-right: 20px;
+    align-self: center;
+}
+
+.answer p {
+    position: relative;
+    z-index: 0;
+    font-family: 'Montserrat-Light';
+    border-radius: 34px;
+    margin: 0 34px 30px 34px;
+}
+
+@media screen and (max-width: 900px) {
+    #faqs h2 {
+        font-size: 24px;
+    }
+    .question p {
+        padding: 12px 0 0px 0;
+    }
+    .question {
+        padding: 0px 0 12px 0;
+    }
+    p {
+        font-size: 14px;
+    }
+    .icon {
+        padding-top: 10px;
+        height: 5px;
+    }
+    #faqs {
+        width: 90%;
+        margin: 120px 10vw 91px;
+    }
+}
