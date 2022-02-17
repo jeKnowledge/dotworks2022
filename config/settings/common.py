@@ -21,7 +21,7 @@ env.read_env()
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 # Raises ImproperlyConfigured exception if DJANGO_SECRET_KEY not in os.environ
-SECRET_KEY = env('DJANGO_SECRET_KEY')
+SECRET_KEY = ')$#/FIN=IQ#N=CN)V/Q#N=)FN?QCM)=(0388f08qn0c93n'
 
 # This ensures that Django will be able to detect a secure connection
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -93,9 +93,24 @@ MANAGERS = ADMINS
 # DATABASE CONFIGURATION
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
+
+
+# DATABASES = {
+#     'default': env.db('DATABASE_URL', default='mysql://jeknowledge@localhost/jeknowledge_dotworks2022'),
+# }
+
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='mysql://jeknowledge@localhost/jeknowledge_dotworks2022'),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dotworks2022',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    },
 }
+
+
 #DATABASES['default']['ATOMIC_REQUESTS'] = True
 if DATABASES['default']['ENGINE'] == 'django.db.backends.mysql':
     DATABASES['default']['OPTIONS'] = {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"}
