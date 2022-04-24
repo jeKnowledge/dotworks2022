@@ -5,6 +5,8 @@
  * @param {Object} [options] - containing the props described here at #options-and-defaults
  */
 
+
+
 let myFlooper = new flooper('.js-flooper', {
     speed: 0.7,
 }); // you can ommit paramenter if used 'js-flooper' in HTML 
@@ -76,17 +78,6 @@ jQuery(document).ready(function ($) {
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
 var cont = document.getElementsByClassName("faq-container")
 var question = document.getElementsByClassName("question");
 var question_img = document.getElementsByClassName("icon");
@@ -102,26 +93,26 @@ for (i = 0; i < question.length; i++) {
 
         if (answer.style.display === "block") {
             answer.style.display = "none";
-            myimg.src = "static/assets/arrow-faq-down.svg";
+            myimg.src = "static/assets/images/arrow-down.png";
         } else {
             answer.style.display = "block";
 
-            myimg.src = "static/assets/arrow-faq-up.svg";
+            myimg.src = "static/assets/images/arrow-up.png";
         }
     });
 }
 
 
 
-var circlev = document.getElementById("circle-vermelho");
-var circlea = document.getElementById("circle-azul");
-window.addEventListener('scroll', function () {
-    circlea.style.width = 98 + window.pageYOffset / 10 + 'px';
-    circlea.style.height = 98 + window.pageYOffset / 10 + 'px';
-    circlev.style.width = 98 + window.pageYOffset / 10 + 'px';
-    circlev.style.height = 98 + window.pageYOffset / 10 + 'px';
+// var circlev = document.getElementById("circle-vermelho");
+// var circlea = document.getElementById("circle-azul");
+// window.addEventListener('scroll', function () {
+//     circlea.style.width = 98 + window.pageYOffset / 10 + 'px';
+//     circlea.style.height = 98 + window.pageYOffset / 10 + 'px';
+//     circlev.style.width = 98 + window.pageYOffset / 10 + 'px';
+//     circlev.style.height = 98 + window.pageYOffset / 10 + 'px';
 
-})
+// })
 
 
 var vids = $("video");

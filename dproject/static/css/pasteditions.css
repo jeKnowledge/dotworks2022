@@ -51,14 +51,14 @@ a.control_prev, a.control_next {
     background: transparent;
     width: 36px;
     height: 36px;
-    border: 7px solid #DB3A50;
+    border: 7px solid #FE508D;
     border-radius: 50px;
     box-sizing: border-box;
     cursor: pointer;
 }
 
 a.control_prev:hover, a.control_next:hover {
-    background: #DB3A50;
+    background: #FE508D;
     transition: all .4s ease-in-out;
 }
 
@@ -92,10 +92,10 @@ a.control_prev {
 }
 
 #slider ul li img {
-    filter: drop-shadow(10px 15px 15px #12324A);
-    border-radius: 20px;
-    width: 658px;
-    height: 438px;
+    /* filter: drop-shadow(10px 15px 15px #12324A); */
+    /* border-radius: 20px; */
+    height: 546px;
+    max-width: 937px;
 }
 
 #section2 {
@@ -112,27 +112,26 @@ a.control_prev {
     width: fit-content;
     float: left;
     text-align: center;
+    align-items: center;
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-bottom: 122px;
 }
 
 .vl {
-    border: 5px solid #DB3A50;
-    height: 224px;
+    /* border: 5px solid #FE508D; */
+    max-height: 224px;
 }
 
 .past-edition p, .year {
-    display: table-cell;
-    vertical-align: middle;
+    align-self: center;
 }
 
 .past-edition p {
-    height: 200px;
-    font-size: 18px;
-    color: #FFFEF3;
+    /* height: 200px; */
+    font-size: 25px;
+    color: #2F2F31;
     text-align: left;
     width: 746px;
     font-family: 'Montserrat-Light';
@@ -140,19 +139,19 @@ a.control_prev {
 }
 
 .year {
-    text-align: center;
-    font-size: 30px;
-    color: #FFFEF3;
-    margin: 0;
+    font-size: 45px;
+    color: #2F2F31;
+    margin-right: 5vw;
     vertical-align: middle;
 }
 
 .quote-container {
-    display: table;
+    align-items: center;
+    /* display: table; */
     width: 746px;
 }
 
-.year-container {
+/* .year-container {
     width: 113px;
     height: 53px;
     display: table;
@@ -170,8 +169,8 @@ a.control_prev {
 }
 
 .year-container:hover h6 {
-    color: #004B84
-}
+    color: #5551FF
+} */
 
 @media screen and (max-width: 1300px) {
     a.control_next {
@@ -196,13 +195,13 @@ a.control_prev {
         right: 11%;
         width: 25px;
         height: 25px;
-        border: 6px solid #DB3A50;
+        border: 6px solid #FE508D;
     }
     a.control_prev {
         left: 11%;
         width: 25px;
         height: 25px;
-        border: 6px solid #DB3A50;
+        border: 6px solid #FE508D;
     }
 }
 

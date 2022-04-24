@@ -1,40 +1,53 @@
-{% extends 'base1.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
 {% block imports %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flooper"></script>
+<script>
+  function getSection(n) {
+    if(!n){window.open(window.location.protocol + "/#faqs","_self")}
+    if(n){window.open(window.location.protocol + "/#inscricoes","_self")}
+  }
+</script>
 
 {% endblock %}
+
 {% block content %}
 
-<div class="background-circle" id="circle-vermelho"></div>
-<div class="background-circle" id="circle-azul"></div>
-
 <section id="section1">
-  <div id="video-div">
-    <video width="600" autoplay muted controls="false" loop playsinline>
-      <source src="{% static 'assets/animacao-dot.mp4' %}" type="video/mp4">
-      <source src="{% static 'assets/animacao-dot.mp4' %}" type="video/ogg">
-    </video>
+  <div id="logo"> 
+    <img src="{% static 'assets/images/.works.png' %}" id="dot-logo" /></a>
   </div>
-
-  <!--<img id="logo-works" src="{% static 'assets/logo.svg' %}" />-->
-  <h1>12 e 19 maio </h1>
-  <a href="" id="inscreve-te"><img src="{% static 'assets/inscreve.svg' %}" /></a>
+  <div>
+    <img src="{% static 'assets/images/text.png' %}" id="date" /></a>
+  </div>
+  <div>
+    <a href="javascript:getFaqs(1);" id="inscricoes-botao">INSCREVE-TE!</a>
+  </div>
 </section>
-<section id="section2">
-  <div id="score-points">
 
-    <h2>VEM MARCAR PONTOS CONNOSCO</h2>
+<!-- <section id="risco">
+  <img src="{% static 'assets/images/risco.png' %}" id="img-risco"/></a>
+</section> -->
+
+<section id="section2">
+  <div id="circulos">
+    <img src="{% static 'assets/images/circulos.png' %}" id="img-circulos"/></a>
+  </div>
+  
+  <div id="score-points">
+    
+    <!-- <h2>VEM MARCAR PONTOS CONNOSCO</h2> -->
+    <img src="{% static 'assets/images/txt2.png' %}" id="img-texto"/></a>
     <p>Gostavas de ter um estágio este verão mas já deixaste passar todos os períodos de candidaturas? Ou
       simplesmente
       nenhum de interessou? Ou estás a preparar-te para o teu próximo ano letivo e gostarias de fazer um estágio
       curricular? Estás a acabar o curso e não sabes onde fazer o teu primeiro estágio profissional?
       <br> <br>
 
-      <b>Dotworks</b> é um evento organizado pela <b>jeKnowledge</b> que<br> junta diversas empresas das áreas
+      Dotworks é um evento organizado pela jeKnowledge que<br> junta diversas empresas das áreas
       tecnológicas!
       Terás ainda <br>
       a oportunidade de ter entrevistas informais com as tuas preferidas!
@@ -42,9 +55,11 @@
 
     </p>
   </div>
-  <div id="flooper-containter">
+</section>
 
-    <!-- required hooks -->
+<section id="section3">
+  <div id="section-grey">
+    <!-- <h2 id="section-line">-----------------</h2> -->
     <div class="c-my-flooper js-flooper">
       {% for company in companys %}
       <div class="c-my-flooper__el js-flooper-item">
@@ -57,23 +72,36 @@
       </div>
       {% endfor %}
     </div>
-  </div>
-
-
-  <h4>ENCONTRA TODOS OS <a href="{% url 'internships' %}" id="estagios-link">ESTÁGIOS</a>
-    QUE TEMOS PARA OFERECER</h4>
+  <div>
 </section>
-<section id="section3">
+
+<section id="section4">
+  </div>
+  <img src="{% static 'assets/images/riscos.png' %}"  id="riscos"/></a>
+  <div>
+    
+  </div id="section4-text">
+  <h4>ENCONTRA TODOS OS 
+    <a href="{% url 'internships' %}" id="estagios-link">ESTÁGIOS</a>
+    QUE TEMOS PARA OFERECER</h4>
+    <div>
+      
+    </div>
+    <img src="{% static 'assets/images/cir amarelo.png' %}"  id="circulo"/></a>
+    <div>
+    
+</section>
+
+<section id="section5">
   <div id="carousel-testemunhos">
     <div class="btn-bar">
       <div id="buttons">
         <a class="control_prev" id="prev" href="javascript:void();"> <img
-            src="{% static 'assets/arrowleft.svg' %}" /></a>
+            src="{% static 'assets/images/arrowleft.svg' %}" /></a>
         <a class="control_next" id="next" href="javascript:void();"><img
-            src="{% static 'assets/arrowright.svg' %}" /></a> </div>
+            src="{% static 'assets/images/arrowright.svg' %}" /></a> </div>
     </div>
     <div id="slider">
-
       <ul>
         {% for testimony in testimonys %}
         <li class="slide">
@@ -98,25 +126,36 @@
   <h5>E como foram as <a href="{% url 'pasteditions' %}" id="passado-link">edições anteriores</a>?</h5>
 </section>
 
-<section id="section4">
+<section id="section6">
   <div id="faqs">
     <div id="header-faqs">
       <h2>FAQ</h2>
-      <a href="{% url 'faq' %}"> <img src="{% static 'assets/plus.svg' %}" id="plus" /></a>
     </div>
     {% for faq in faqs %}
     <div class="faq-container">
       <div class="question">
         <p>{{faq.question}}</p>
-        <img class="icon" src="{% static 'assets/arrow-faq-down.svg' %}">
+        <img src="{% static 'assets/images/arrow-down.png' %}" class="icon" >
       </div>
       <div class="answer">
         <p>{{faq.answer}}</p>
       </div>
-
     </div>
     {% endfor %}
   </div>
 </section>
+
+<section id="sections7">
+  <div id="section-inscricoes">
+    <div id="header-inscricoes">
+      <h2>TYPEFORM</h2>
+      <!-- <a href="{% url 'faq' %}"> <img src="{% static 'assets/plus.svg' %}" id="plus" /></a> -->
+    </div>
+    <div id="incricao">
+  
+    </div>
+  </div>
+</section>
+<!-- <script src="{% static 'js/faq.js' %}"></script> -->
 <script src="{% static 'js/index.js' %}"></script>
 {% endblock %}

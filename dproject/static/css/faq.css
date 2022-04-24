@@ -15,7 +15,7 @@
     margin: 0;
     font-size: 40px;
     font-family: 'Montserrat-Bold';
-    color: #004B84;
+    color: #5551FF;
     text-align: center;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .faq-container {
-    border: 1px solid #004B84;
+    border: 1px solid #5551FF;
     box-sizing: border-box;
     border-radius: 34px;
     width: 100%;
@@ -61,7 +61,7 @@
 }
 
 .faq-container:hover {
-    border: 1px solid #DB3A50;
+    border: 1px solid #FE508D;
 }
 
 @keyframes sweep {

@@ -23,7 +23,7 @@ def partners(request):
 
 def faq(request):
     faqs = Faq.objects.all()
-    return render(request, "website/faq.html", {"faqs": faqs})
+    return render(request, "website/index.html/#faqs", {"faqs": faqs})
 
 
 def internships(request):

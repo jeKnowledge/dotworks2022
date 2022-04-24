@@ -1,40 +1,52 @@
+/*@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../assets/fonts/new/Poppins-SemiBold.ttf");
+}*/
+
 @font-face {
   font-family: "Montserrat-Light";
-  src: /*url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  /*url("../assets/fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
-  url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
-  /* Safari, Android, iOS */
+  src: url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../assets/fonts/Metropolis-Light.woff") format("woff"),
+    /* Modern Browsers */
+    url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
+  /*Safari, Android, iOS */
 }
 
 @font-face {
   font-family: "Montserrat-ExtraLight";
-  src: /*url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  /*url("../assets/fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
-  url("../assets/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  src: url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../assets/fonts/Metropolis-Light.woff") format("woff"),
+    /* Modern Browsers */
+    url("../assets/fonts/Montserrat-ExtraLight.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
-  src: /*url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  /*url("../assets/fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
-  url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  src:
+    /*url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    /*url("../assets/fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
+    url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
-  src: /*url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  /*url("../assets/fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
-  url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  src:
+    /*url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    /*url("../assets/fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
+    url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
-  src: /*url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  /*url("../assets/fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
-  url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  src:
+    /*url("../assets/fonts/Montserrat-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    /*url("../assets/fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
+    url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 
@@ -52,20 +64,20 @@ p {
 }
 
 body {
-  background-color: #004b84;
+  background-color: #ebecf6;
   overflow-x: hidden;
   margin: 0;
 }
 
-#inscricoes-nav {
+/* #inscricoes-nav {
   display: none;
-}
+} */
 
 .nav-base {
   width: 100vw;
   height: 111px;
   position: fixed;
-  background-color: #004b84;
+  background-color: #5551FF;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,7 +85,7 @@ body {
 }
 
 .nav-links {
-  padding-left: 10vw;
+  padding-left: 50vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,7 +99,7 @@ body {
   vertical-align: middle;
   font-size: 18px;
   text-decoration: none;
-  color: #fffef3;
+  color: #ebecf6;
 }
 
 .nav-base a:hover {
@@ -125,7 +137,7 @@ body {
   height: 5px;
   width: 26px;
   margin: 3px 0 0 0;
-  background: #DB3A50;
+  background: #FE508D;
   border-radius: 3.5px;
   transition: transform .5s ease, opacity .5s ease;
 }
@@ -149,7 +161,7 @@ body {
 /* FOOTER*/
 
 #footer {
-  background-color: #fffef3;
+  background-color: #ebecf6;
   padding: 0 98px;
   height: 310px;
   display: flex;
@@ -163,7 +175,7 @@ body {
 
 h7 {
   font-size: 21px;
-  color: #004b84;
+  color: #5551FF;
 }
 
 .column-footer p {
@@ -172,7 +184,7 @@ h7 {
   width: 262px;
   font-family: "Montserrat-Light";
   line-height: 24px;
-  color: #004b84;
+  color: #5551FF;
 }
 
 #info-jek {
@@ -213,6 +225,7 @@ h7 {
     height: 24px;
     padding-left: 20px;
   }
+
   .burger {
     padding: 0;
     padding-right: 30px;
@@ -220,6 +233,7 @@ h7 {
     display: block;
     z-index: 2;
   }
+
   .nav-links {
     position: fixed;
     z-index: 1;
@@ -229,50 +243,60 @@ h7 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #004b84;
+    background: #5551FF;
     transform: translateX(100%);
     transition: transform 1s ease;
     padding: 0;
     margin: 0;
     text-align: center;
   }
+
   .nav-base {
     height: 60px;
   }
-  .nav-item, .show-later {
+
+  .nav-item,
+  .show-later {
     margin: 0;
     margin-bottom: 3vh;
     text-align: center;
   }
+
   .nav-base .nav-links a {
     font-size: 28px;
     width: auto;
   }
+
   .show-later {
     display: block;
   }
+
   .show-later.circle {
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: #DB3A50;
+    background: #FE508D;
   }
+
   #footer {
     flex-direction: column;
     height: auto;
     align-items: center;
     padding: 46px 98px 20px;
   }
+
   .column-footer {
     text-align: center;
     width: auto;
     padding: 0;
     padding-bottom: 37px;
   }
+
   #info-jek {
     text-align: center;
     padding-top: 14px
   }
+
   #column-jek {
     align-items: center;
     -webkit-box-ordinal-group: 3;
@@ -281,17 +305,22 @@ h7 {
     -webkit-order: 3;
     order: 3;
   }
+
   #column-jek img {
     width: 115px;
   }
-  h7, .column-footer p {
+
+  h7,
+  .column-footer p {
     font-size: 14px;
     line-height: 17px;
   }
+
   .logo-redes {
     width: 28px;
     height: 28px;
   }
+
   #column-contactos {
     -webkit-box-ordinal-group: 2;
     -moz-box-ordinal-group: 2;
@@ -299,6 +328,7 @@ h7 {
     -webkit-order: 2;
     order: 2;
   }
+
   #column-logo {
     padding: 0;
     -webkit-box-ordinal-group: 1;
@@ -308,6 +338,7 @@ h7 {
     order: 1;
     padding-bottom: 10px;
   }
+
   #faq-nav {
     padding: 0;
   }

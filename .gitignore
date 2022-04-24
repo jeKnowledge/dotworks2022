@@ -76,4 +76,6 @@ staticfiles/
 # core dumps
 core
 
+cmd codes.txt
+
 /venv

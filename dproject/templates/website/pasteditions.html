@@ -1,4 +1,4 @@
-{% extends 'base2.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
 {% block imports %}
@@ -38,7 +38,9 @@
     <div class="year-container" href="#">
       <h6 class="year">{{past.year}}</h6>
     </div>
-    <div class="vl"></div>
+    <div>
+      <img src="{% static 'assets/images/divisória rosa.png' %}"  class="vl">
+    </div>
     <div class="quote-container">
       <p class="quote-frase"> {{past.description}}
 

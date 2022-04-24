@@ -27,7 +27,7 @@ h1 {
   /* margin-bottom: 50px;*/
   margin-left: 5vw;
   margin-right: 3vw;
-  background-color: #fffef3;
+  background-color: #ebecf6;
   /*position: sticky;
     position: -webkit-sticky;
     top: 0px;
@@ -74,7 +74,7 @@ h1 {
 .checkmark {
   border-radius: 50%;
   border: 0.5px solid #004b84;
-  background: #fffef3;
+  background: #ebecf6;
   box-sizing: border-box;
   height: 16px;
   width: 16px;
@@ -97,7 +97,7 @@ h1 {
 /* When the radio button is checked, add a blue background */
 
 .filter-container input:not(:checked).checkmark {
-  background: #fffef3;
+  background: #ebecf6;
 }
 
 .filter-container input:checked~.checkmark {
@@ -142,7 +142,7 @@ h2 {
 .filter-button {
   display: none;
   cursor: pointer;
-  background-color: #fffef3;
+  background-color: #ebecf6;
   margin: 20px;
 }
 
@@ -203,7 +203,7 @@ h2 {
   height: fit-content;
   /* Full height */
   /* Fallback color */
-  background-color: #fffef3;
+  background-color: #ebecf6;
   /* Black w/ opacity */
   margin-left: auto;
   justify-content: center;

@@ -12,10 +12,10 @@ for (i = 0; i < question.length; i++) {
         if (answer.style.display === "block") {
 
             answer.style.display = "none";
-            myimg.src = "static/assets/arrow-faq-down.svg";
+            myimg.src = "static/assets/images/arrow-down.png";
         } else {
             answer.style.display = "block";
-            myimg.src = "static/assets/arrow-faq-up.svg";
+            myimg.src = "static/assets/images/arrow-up.png";
         }
     });
 }
