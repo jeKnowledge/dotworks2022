@@ -205,7 +205,7 @@ h7 {
 }
 
 #logojek {
-  width: 203px;
+  width: 50px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -281,9 +281,9 @@ h7 {
     -webkit-order: 3;
     order: 3;
   }
-  #column-jek img {
+ /*  #column-jek img {
     width: 115px;
-  }
+  } */
   h7, .column-footer p {
     font-size: 14px;
     line-height: 17px;
