@@ -13,7 +13,7 @@
 
   <title>.works 2021</title>
   <link rel="icon" type="image/png" href="{% static 'assets/favicon.png' %}" />
-
+  
   <script>
     (function(d) {
       var config = {
@@ -25,7 +25,7 @@
     })(document);
   </script>
 
-
+  
 </head>
 
 <body>
@@ -35,36 +35,36 @@
       if(n){window.open(window.location.protocol + "/#inscricoes","_self")}
     }
   </script>
-
+  
   <nav class="nav-base" id="my-nav-base">
 
     <a href="{% url 'index' %}"> <img src="{% static 'assets/images/w.png' %}" id="dot-w" /></a>
     <ul class="nav-links">
-      <div id="edicoes-passadas-nav" class="nav-item-container">
-        <a href="{% url 'pasteditions' %}" id="partners-nav" class="nav-item">EDIÇÕES PASSADAS</a>
-        <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco"/>
-      </div>
-      <div id="internships-nav" class="nav-item-container">
-        <a href="{% url 'internships' %}" id="partners-nav" class="nav-item">ESTÁGIOS</a>
-        <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco"/>
-      </div>
-      <div id="partners-nav" class="nav-item-container">
-        <a href="{% url 'partners' %}" id="partners-nav" class="nav-item">PARCEIROS</a>
-        <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco"/>
-      </div>
+      <li id="edicoes-passadas-nav" class="nav-item-container">
+        <a href="{% url 'pasteditions' %}" class="nav-item">EDIÇÕES PASSADAS</a>
+        <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco" id="nav-risco"/>
+      </li>
+      <li id="internships-nav" class="nav-item-container">
+        <a href="{% url 'internships' %}" class="nav-item">ESTÁGIOS</a>
+        <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco" id="nav-risco"/>
+      </li>
+      <li id="partners-nav" class="nav-item-container">
+        <a href="{% url 'partners' %}" class="nav-item">PARCEIROS</a>
+        <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco" id="nav-risco"/>
+      </li>
       <!-- <div class="show-later circle"></div> -->
       <!-- <div class="show-later circle"></div> -->
       <!--<div class="show-later circle"></div>-->
-      <div id="faq-nav" class="nav-item-container">
+      <li id="faq-nav" class="nav-item-container">
         <a href="javascript:getSection(0);" id="faq-nav" class="nav-item">FAQ</a>
-        <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco"/>
-      </div>
+        <!-- <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco" id="nav-risco"/> -->
+      </li>
       <!-- <a href="#faqs" id="faq-nav" class="nav-item">FAQ</a> -->
     </ul>
     <a href="javascript:getSection(1);" id="inscricoes-nav">INSCRIÇÕES</a>
-    <div class="burger">
+    <li class="burger">
     <a href="{% url 'index' %}"> <img src="{% static 'assets/images/w.png' %}" id="dot-w" /></a>
-    </div>
+    </li>
   </nav>
   {% block content %}
 
@@ -91,7 +91,7 @@
 
     </div> -->
     <div class="column-footer" id="column-jek">
-      <img id="logojek" src="{% static 'assets/logojek.svg' %}" />
+      <img src="{% static 'assets/images/logojek.svg' %}"/>
       <p id="info-jek">geral@jeknowledge.com <br>
         +351 926 590 223
         <br><br>

@@ -9,22 +9,28 @@ function nav() {
 }
 
 
-var containers = document.getElementsByClassName("nav-item-container")
-var items = document.getElementsByClassName("nav-item");
-var items_img = document.getElementsByClassName("nav-risco");
-
-for (i = 0; i < items.length; i++) {
-    items[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var line = items_img[0];
-
-        if (answer.style.display === "block") {
-            answer.style.display = "none";
-            myimg.src = "static/assets/images/arrow-down.png";
-        } else {
-            answer.style.display = "block";
-
-            myimg.src = "static/assets/images/arrow-up.png";
+window.addEventListener("load", function() {
+    // alert(document.location.pathname)
+    var string;
+    switch (document.location.pathname) {
+        case "/pasteditions":
+            string = "edicoes-passadas-nav";
+            break;
+        case "/internships":
+            string = "internships-nav";
+            break;
+        case "/partners":
+            string = "partners-nav";
+            break;
         }
-    });
-}
+    document.getElementById(string).getElementsByTagName('img')[0].style.opacity = "1";
+});
+// var containers = document.getElementsByClassName("nav-item-container")
+// var items = 
+// var items_img = document.getElementsByClassName("nav-risco");
+
+
+// for (i = 0; i < containers.length; i++) {
+//     containers[i].addEventListener("click", function () {
+//     });
+// }

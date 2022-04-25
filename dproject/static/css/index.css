@@ -128,17 +128,6 @@ p {
   display: none;
 }
 
-/* #inscreve-te img {
-    transition: all .4 ease-in-out;
-}
-
-#inscreve-te img:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 16px;
-    transform: scale(1.05);
-    transition: all .3s ease-in-out;
-} */
-
 h2 {
   color: #5551FF;
   font-family: 'Montserrat-Bold';
@@ -241,11 +230,11 @@ h4 {
 }
 
 #estagios-link {
-  font-family: 'Montserrat-SemiBold';
-  color: #FE508D;
-  font-size: 34px;
-  text-decoration: none;
-  position: relative;
+    /* font-family: 'Montserrat-SemiBold'; */
+    color: #FE508D;
+    font-size: 34px;
+    text-decoration: none;
+    position: relative;
 }
 
 #section5 {
@@ -385,7 +374,7 @@ h5 {
 
 /*FAQ*/
 
-#section6 {
+#faqs {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -415,7 +404,7 @@ h5 {
 }
 
 
-#faqs {
+#section6  {
   margin-top: 150px;
   margin-bottom: 190px;
   width: 60%;

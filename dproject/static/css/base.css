@@ -5,6 +5,12 @@
 }
 
 @font-face {
+    font-family: "Inter-SemiBold";
+    src: url("../assets/fonts/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
     font-family: "Inter-Bold";
     src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
     font-weight: 700;
@@ -48,7 +54,7 @@ html {
 
 body {
     background-color: #ebecf6;
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0;
 }
 
@@ -81,6 +87,21 @@ body {
     width: 60%;
 }
 
+.nav-links li{
+    position: relative;
+}
+
+.nav-links img{
+    position: absolute;
+    transform: rotate(4deg);
+    width: 100%;
+    height: 20px;
+    left: -5px;
+    bottom: -18px;
+
+    opacity: 0;
+}
+
 .nav-base .nav-links a {
     vertical-align: middle;
     font-size: 18px;
@@ -99,32 +120,11 @@ body {
     transition: all .4s ease-in-out;
 }
 
-/* .nav-links img{
-    display: none;
-} */
 .nav-item-container{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* width: 100%; */
-}
-
-#faq-nav .nav-risco {
-    max-width: 100px;
-    /* display: none; */
-}
-.nav-risco {
-    max-width: 100px;
-    /* display: none; */
-}
-.nav-risco {
-    max-width: 100px;
-    /* display: none; */
-}
-.nav-risco {
-    max-width: 100px;
-    /* display: none; */
+    width: fit-content;
+    padding: 0;
 }
 
 #inscricoes-nav {
@@ -150,8 +150,8 @@ body {
 
 .nav-item {
     vertical-align: middle;
-    margin-left: 20px;
-    width: 108px;
+    /* margin-left: 20px; */
+    /* width: 108px; */
 }
 
 #edicoes-passadas-nav {
@@ -193,7 +193,6 @@ body {
 #footer {
     background-color: #5551FF;
     padding: 0 98px;
-    height: 310px;
     display: flex;
     flex-direction: row;
 }
@@ -228,26 +227,8 @@ h7 {
     align-items: flex-end;
 }
 
-#column-logo {
-    padding-top: 21px;
-}
-
-#linkedin {
-    padding: 0 18px;
-}
-
-.logo-redes {
-    height: 50px;
-}
-
-#column-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#logojek {
-    width: 50px;
+#column-jek img {
+    width: 65px;
 }
 
 @media screen and (max-width: 1000px) {

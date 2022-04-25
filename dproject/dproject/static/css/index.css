@@ -120,7 +120,7 @@ h4 {
 }
 
 #estagios-link {
-    font-family: 'Montserrat-SemiBold';
+    /* font-family: 'Montserrat-SemiBold'; */
     color: #DB3A50;
     font-size: 34px;
     text-decoration: underline;
@@ -272,7 +272,7 @@ h5 {
 #faqs h2 {
     margin: 0;
     font-size: 40px;
-    font-family: 'Montserrat-SemiBold';
+    /* font-family: 'Montserrat-SemiBold'; */
     color: #004B84;
 }
 
