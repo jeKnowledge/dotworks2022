@@ -2,15 +2,15 @@ document.addEventListener('DOMContentLoaded', nav)
 
 function nav() {
     const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-base');
+    const navbar = document.querySelector('.nav-base');
     burger.addEventListener('click', () => {
-        nav.classList.toggle('show')
+        navbar.classList.toggle('show')
     })
 }
 
 
 window.addEventListener("load", function() {
-    // alert(document.location.pathname)
+    //alert(document.location.pathname)
     var string;
     switch (document.location.pathname) {
         case "/pasteditions":
@@ -22,7 +22,11 @@ window.addEventListener("load", function() {
         case "/partners":
             string = "partners-nav";
             break;
+        default:
+            string = "";
+            return;
         }
+    console.log(string);
     document.getElementById(string).getElementsByTagName('img')[0].style.opacity = "1";
     document.getElementById(string).getElementsByTagName('a')[0].style.color = "#FE508D";
 });

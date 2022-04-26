@@ -95,10 +95,10 @@ MANAGERS = ADMINS
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': env.db('DATABASE_URL', default='mysql://jeknowledge@localhost/jeknowledge_dotworks2022'),
-# }
-
+DATABASES = {
+    'default': env.db('DATABASE_URL', default='mysql://jeknowledge@localhost/jeknowledge_dotworks2022'),
+}
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -108,7 +108,7 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
     },
-}
+}"""
 
 
 #DATABASES['default']['ATOMIC_REQUESTS'] = True
