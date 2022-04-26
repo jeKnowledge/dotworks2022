@@ -2,8 +2,9 @@ a {
     text-decoration: none;
 }
 
-#edicoes-passadas-nav {
-    /* font-family: 'Montserrat-SemiBold'; */
+p{
+    font-family: "Inter-Medium";
+    font-weight: 500;
 }
 
 #section1 {
@@ -141,6 +142,7 @@ img.control_prev {
 }
 
 .vl {
+    margin: -18px 0;
     /* border: 5px solid #FE508D; */
     max-height: 224px;
 }
@@ -150,13 +152,14 @@ img.control_prev {
 }
 
 .past-edition p {
+    /* content: contain; */
     /* height: 200px; */
-    font-size: 25px;
+    font-size: 18px;
+    /* overflow: auto; */
     color: #2F2F31;
     text-align: left;
-    width: 746px;
-    font-family: 'Montserrat-Light';
-    padding-left: 53px;
+    max-width: 746px;
+    padding-left: 60px;
 }
 
 .year {

@@ -30,6 +30,8 @@
 
 
 p {
+    font-family: "Inter-Medium";
+    font-weight: 500;
     margin: 0;
     padding: 0;
 }
@@ -200,15 +202,14 @@ body {
 }
 
 h7 {
-    font-size: 21px;
+    font-size: 30px;
     color: #ebecf6;
 }
 
-.column-footer p {
+div#column-contactos p, p#info-jek  {
     display: block;
     font-size: 18px;
     width: 262px;
-    font-family: "Montserrat-ExtraLight";
     line-height: 24px;
     color: #ebecf6;
 }
@@ -224,8 +225,13 @@ h7 {
     align-items: flex-end;
 }
 
+/* #column-jek p{
+    align-self: flex-end;
+} */
+
 #column-jek img {
     width: 65px;
+    right: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -243,6 +249,7 @@ h7 {
     }
 
     .nav-links {
+
         position: fixed;
         z-index: 1;
         top: 0;
@@ -250,13 +257,14 @@ h7 {
         width: 100vw;
         flex-direction: column;
         align-items: center;
+        gap: 40px;
         justify-content: center;
         background: #ebecf6;
         transform: translateX(100%);
         transition: transform 1s ease;
         padding: 0;
         margin: 0;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .nav-base {
@@ -271,6 +279,10 @@ h7 {
     }
 
     .nav-base .nav-links a {
+        font-family: "Inter-SemiBold";
+        font-weight: 600;
+        color: #5551FF;
+        align-self: center;
         font-size: 28px;
         width: auto;
     }
@@ -299,12 +311,15 @@ h7 {
         padding: 0;
         padding-bottom: 37px;
     }
-
-    #info-jek {
-        text-align: center;
-        padding-top: 14px
+    
+    #column-contactos {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
     }
-
+    
     #column-jek {
         align-items: center;
         -webkit-box-ordinal-group: 3;
@@ -313,40 +328,19 @@ h7 {
         -webkit-order: 3;
         order: 3;
     }
-
-  /*   #column-jek img {
-        width: 115px;
-    } */
+    
+    #info-jek {
+        text-align: center;
+        padding-top: 14px
+    }
 
     .column-footer p {
         font-size: 14px;
         line-height: 17px;
     }
 
-    .logo-redes {
-        width: 28px;
-        height: 28px;
-    }
-
-    #column-contactos {
-        -webkit-box-ordinal-group: 2;
-        -moz-box-ordinal-group: 2;
-        -ms-flex-order: 2;
-        -webkit-order: 2;
-        order: 2;
-    }
-
-    #column-logo {
-        padding: 0;
-        -webkit-box-ordinal-group: 1;
-        -moz-box-ordinal-group: 1;
-        -ms-flex-order: 1;
-        -webkit-order: 1;
-        order: 1;
-        padding-bottom: 10px;
-    }
-
     #faq-nav {
         padding: 0;
     }
+
 }

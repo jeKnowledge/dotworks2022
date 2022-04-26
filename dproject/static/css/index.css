@@ -117,7 +117,6 @@ p {
 }
 
 #score-points p {
-  font-family: 'Montserrat-Light';
   font-size: 22px;
   text-align: left;
 }
@@ -131,7 +130,8 @@ p {
 
 h2 {
   color: #5551FF;
-  font-family: 'Montserrat-Bold';
+  font-family: "source-han-sans-traditional", sans-serif;
+  font-weight: 900;
   font-size: 43px;
   text-align: center;
 }
@@ -252,6 +252,7 @@ h4 {
 /* Styling for prev and next buttons */
 
 #slider {
+  contain: content;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -342,7 +343,6 @@ a#next:hover {
   font-size: 22px;
   color: #FFFEF3;
   text-align: left;
-  font-family: 'Montserrat-Light';
   padding-left: 53px;
 }
 
@@ -397,8 +397,6 @@ h5 {
 #faqs h2 {
   margin: 0;
   font-size: 40px;
-  font-family: "source-han-sans-traditional", sans-serif;
-  font-weight: 900;
   font-style: normal;
   color: #5551FF;
   text-align: center;
@@ -504,7 +502,6 @@ h5 {
 .answer p {
   position: relative;
   z-index: 0;
-  font-family: 'Montserrat-Light';
   border-radius: 34px;
   margin: 0 34px 30px 34px;
 }
@@ -569,11 +566,13 @@ h5 {
     width: 80vw;
     max-width: none;
     height: 50vh;
+    padding-bottom: 10vh;
     object-fit: contain;
   }
 
   #date {
     max-width: none;
+    margin-bottom: 10vh;
     /* margin-top: -5vh; */
   }
 
