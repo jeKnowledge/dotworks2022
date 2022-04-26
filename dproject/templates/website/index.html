@@ -5,12 +5,6 @@
 <link rel="stylesheet" href="{% static 'css/index.css' %}" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flooper"></script>
-<script>
-  function getSection(n) {
-    if(!n){window.open(window.location.protocol + "/#faqs","_self")}
-    if(n){window.open(window.location.protocol + "/#inscricoes","_self")}
-  }
-</script>
 
 {% endblock %}
 
@@ -24,7 +18,7 @@
     <img src="{% static 'assets/images/text.png' %}" id="date" /></a>
   </div>
   <div>
-    <a href="/#section-inscricoes" id="inscricoes-botao">INSCREVE-TE!</a>
+    <a href="/#inscricoes" id="inscricoes-botao">INSCREVE-TE!</a>
   </div>
 </section>
 
@@ -33,15 +27,10 @@
 </section> -->
 
 <section id="section2">
-  <div id="circulos">
-    <img src="{% static 'assets/images/circulos.png' %}" id="img-circulos"/></a>
-  </div>
-
+    <img src="{% static 'assets/images/circulos.png' %}" id="circulos"/></a>
+  
   <div id="score-points">
-
-    <!-- <h2>VEM MARCAR PONTOS CONNOSCO</h2> -->
     <img src="{% static 'assets/images/txt2.png' %}" id="img-texto"/></a>
-    <!-- <img src="{% static 'assets/images/txt3.png' %}" id="img-texto2"/></a> -->
     <p>Gostavas de ter um estágio este verão mas já deixaste passar todos os períodos de candidaturas? Ou
       simplesmente
       nenhum de interessou? Ou estás a preparar-te para o teu próximo ano letivo e gostarias de fazer um estágio
@@ -52,10 +41,10 @@
       tecnológicas!
       Terás ainda <br>
       a oportunidade de ter entrevistas informais com as tuas preferidas!
-
-
     </p>
   </div>
+
+  <img src="{% static 'assets/images/riscos2.png' %}" id="riscos2"/></a>
 </section>
 
 <section id="section3">
@@ -77,20 +66,13 @@
 </section>
 
 <section id="section4">
-  </div>
   <img src="{% static 'assets/images/riscos.png' %}"  id="riscos"/></a>
-  <div>
 
   </div id="section4-text">
-  <h4>ENCONTRA TODOS OS
-    <a href="{% url 'internships' %}" id="estagios-link">ESTÁGIOS</a>
-    QUE TEMOS PARA OFERECER</h4>
-    <div>
+    <h4>ENCONTRA TODOS OS <a href="{% url 'internships' %}" id="estagios-link">ESTÁGIOS</a> QUE TEMOS PARA OFERECER</h4>
+  <div>
 
-    </div>
-    <img src="{% static 'assets/images/cir amarelo.png' %}"  id="circulo"/></a>
-    <div>
-
+  <img src="{% static 'assets/images/cir amarelo.png' %}"  id="circulo"/></a>
 </section>
 
 <section id="section5">
@@ -98,37 +80,35 @@
     <div class="btn-bar">
       <div id="buttons">
         <a class="control_prev" id="prev" href="javascript:void();"> <img
-            src="{% static 'assets/images/arrowleft.svg' %}" /></a>
+          src="{% static 'assets/images/arrowleft.svg' %}" /></a>
         <a class="control_next" id="next" href="javascript:void();"><img
-            src="{% static 'assets/images/arrowright.svg' %}" /></a> </div>
+          src="{% static 'assets/images/arrowright.svg' %}" /></a> </div>
+      </div>
+
+  <div id="slider">
+    <ul>
+      {% for testimony in testimonys %}
+      <li class="slide">
+      <div class="autor-container">
+        <h6 class="quote-autor">{{testimony.firstName}} {{testimony.lastName}} </h6>
+      </div>
+      
+      <!-- <div class="vl"></div> -->
+      <img src="{% static 'assets/images/divisoria amarela.png' %}"  id="div-amr"/></a>
+      <div class="quote-container">
+        <p class="quote-frase"> {{testimony.test}}</p>
+      </div>
+          </li>
+          {% endfor %}
+        </ul>
     </div>
-    <div id="slider">
-      <ul>
-        {% for testimony in testimonys %}
-        <li class="slide">
-          <div class="autor-container">
-            <h6 class="quote-autor">{{testimony.firstName}} {{testimony.lastName}} </h6>
-          </div>
-          <div class="vl"></div>
-          <div class="quote-container">
-            <p class="quote-frase"> {{testimony.test}}
 
-            </p>
-          </div>
-        </li>
-        {% endfor %}
-
-      </ul>
-    </div>
-
-  </div>
-  </div>
   </div>
   <h5>E como foram as <a href="{% url 'pasteditions' %}" id="passado-link">edições anteriores</a>?</h5>
 </section>
 
-<section id="faqs">
-  <div id="section6">
+<section id="section6">
+  <div id="faqs"  class="faq-anchor">
     <div id="header-faqs">
       <h2>FAQ</h2>
     </div>
@@ -146,17 +126,17 @@
   </div>
 </section>
 
-<section id="sections7">
-  <div id="section-inscricoes">
-    <div id="header-inscricoes">
+<section id="section7">
+  <div id="inscricoes"  class="inscricoes-anchor">
+    <!-- <div id="header-inscricoes">
       <h2>TYPEFORM</h2>
-      <!-- <a href="{% url 'faq' %}"> <img src="{% static 'assets/plus.svg' %}" id="plus" /></a> -->
-    </div>
-    <div id="incricao">
-
+    </div> -->
+    <div class="incricao">
+      <div data-tf-widget="VRPz0K" data-tf-opacity="100" data-tf-iframe-props="title=.works2022" data-tf-medium="snippet" style="margin: 50px auto 100px auto;border-radius:100px;width:60%;height:500px;"></div>
+      <script src="//embed.typeform.com/next/embed.js" ></script>
     </div>
   </div>
 </section>
-<!-- <script src="{% static 'js/faq.js' %}"></script> -->
+
 <script src="{% static 'js/index.js' %}"></script>
 {% endblock %}

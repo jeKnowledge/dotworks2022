@@ -24,6 +24,7 @@ window.addEventListener("load", function() {
             break;
         }
     document.getElementById(string).getElementsByTagName('img')[0].style.opacity = "1";
+    document.getElementById(string).getElementsByTagName('a')[0].style.color = "#FE508D";
 });
 // var containers = document.getElementsByClassName("nav-item-container")
 // var items = 
