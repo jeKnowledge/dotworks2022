@@ -73,9 +73,6 @@ jQuery(document).ready(function ($) {
         });
     };
 
-
-
-
 });
 
 var cont = document.getElementsByClassName("faq-container")
