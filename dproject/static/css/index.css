@@ -593,6 +593,10 @@ h5 {
     padding: 80px 0 62px;
   }
 
+  #section4 h4 {
+    max-width: 90vw;
+  }
+
   #passado-link {
     text-decoration: none;
     color: #ffcc66;
@@ -608,5 +612,9 @@ h5 {
     max-height: 70vh;
     margin: -15vh 0vw 0vh -30vw;
     object-fit: contain;
-}
+  }
+
+  #circulo {
+    margin: -14vh 0vw 0vh 27vw;
+  }
 }
