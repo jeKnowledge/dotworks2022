@@ -222,10 +222,18 @@ h4 {
 }
 
 #estagios-link {
+<<<<<<< Updated upstream
     color: #FE508D;
     font-size: 34px;
     text-decoration: none;
     position: relative;
+=======
+  /* font-family: 'Montserrat-SemiBold'; */
+  color: #FE508D;
+  font-size: 34px;
+  text-decoration: none;
+  position: relative;
+>>>>>>> Stashed changes
 }
 
 #section5 {
@@ -398,7 +406,12 @@ h5 {
   margin-bottom: 37px;
 }
 
+<<<<<<< Updated upstream
 #faqs  {
+=======
+
+#section6 {
+>>>>>>> Stashed changes
   margin-top: 150px;
   width: 60%;
   display: flex;
@@ -573,4 +586,19 @@ h5 {
     position: relative;
     font-size: 20px;
   }
+
+  #section5 h5 {
+    color: #FFFEF3;
+    font-size: 17pt;
+    text-align: center;
+    margin: 0;
+    padding: 80px 0 62px;
+  }
+
+  #passado-link {
+    text-decoration: none;
+    color: #ffcc66;
+    font-size: 17pt;
+    position: relative;
+}
 }
