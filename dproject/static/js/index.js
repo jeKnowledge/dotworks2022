@@ -102,19 +102,6 @@ for (i = 0; i < question.length; i++) {
     });
 }
 
-
-
-// var circlev = document.getElementById("circle-vermelho");
-// var circlea = document.getElementById("circle-azul");
-// window.addEventListener('scroll', function () {
-//     circlea.style.width = 98 + window.pageYOffset / 10 + 'px';
-//     circlea.style.height = 98 + window.pageYOffset / 10 + 'px';
-//     circlev.style.width = 98 + window.pageYOffset / 10 + 'px';
-//     circlev.style.height = 98 + window.pageYOffset / 10 + 'px';
-
-// })
-
-
 var vids = $("video");
 $.each(vids, function () {
     this.controls = false;
