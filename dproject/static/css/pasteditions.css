@@ -49,11 +49,32 @@ a {
 
 a.control_prev, a.control_next {
     background: transparent;
-    width: 36px;
+    max-width: 36px;
     height: 36px;
     border: 7px solid #FE508D;
     border-radius: 50px;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+img#hover{
+    opacity: 0;
+}
+
+img#normal:hover{
+    opacity: 0;
+}
+img#hover:hover{
+    opacity: 1;
+}
+
+img.control_prev, img.control_next {
+    /* background: transparent; */
+    max-width: 36px;
+    /* height: 36px; */
+    /* border: 7px solid #FE508D; */
+    /* border-radius: 50px; */
+    /* box-sizing: border-box; */
     cursor: pointer;
 }
 
@@ -62,16 +83,16 @@ a.control_prev:hover, a.control_next:hover {
     transition: all .4s ease-in-out;
 }
 
-a.control_next {
+img.control_next {
     float: right;
     position: absolute;
-    right: 22%;
+    right: 15%;
 }
 
-a.control_prev {
+img.control_prev {
     float: left;
     position: absolute;
-    left: 22%;
+    left: 15%;
 }
 
 .btn-bar {
@@ -173,35 +194,35 @@ a.control_prev {
 } */
 
 @media screen and (max-width: 1300px) {
-    a.control_next {
-        right: 18%;
+    img.control_next {
+        right: 11%;
     }
-    a.control_prev {
-        left: 18%;
+    img.control_prev {
+        left: 11%;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    a.control_next {
-        right: 15%;
+    img.control_next {
+        right: 9%;
     }
-    a.control_prev {
-        left: 15%;
+    img.control_prev {
+        left: 9%;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    a.control_next {
-        right: 11%;
+    img.control_next {
+        right: 6%;
         width: 25px;
         height: 25px;
-        border: 6px solid #FE508D;
+        /* border: 6px solid #FE508D; */
     }
-    a.control_prev {
-        left: 11%;
+    img.control_prev {
+        left: 6%;
         width: 25px;
         height: 25px;
-        border: 6px solid #FE508D;
+        /* border: 6px solid #FE508D; */
     }
 }
 
@@ -247,10 +268,10 @@ a.control_prev {
     .btn-bar {
         top: 65%;
     }
-    a.control_next {
+    img.control_next {
         right: 30%;
     }
-    a.control_prev {
+    img.control_prev {
         left: 30%;
     }
 }

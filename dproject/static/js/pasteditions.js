@@ -43,11 +43,11 @@ jQuery(document).ready(function ($) {
         });
     };
 
-    $('a.control_prev').click(function () {
+    $('img.control_prev').click(function () {
         moveLeft();
     });
 
-    $('a.control_next').click(function () {
+    $('img.control_next').click(function () {
         moveRight();
     });
 
@@ -116,3 +116,20 @@ $(window).resize(function () {
     };
 
 });
+
+// var buttons = document.getElementsById("hover");
+// // console.log(buttons);
+// alert(buttons.length);
+// for (i = 0; i < buttons.length; i++) {
+//     buttons.getElementsById("normal")[i].addEventListener("hover", function () {
+//         if ( this.classList.contains('control_next') ){
+//             this.style.opacity = 0;
+//             document.getElementsByClassName('control_next').getElementsById("hover").style.opacity = "1";
+//         }
+//         if ( this.classList.contains('control_prev') ){
+//             this.style.opacity = 0;
+//             document.getElementsByClassName('control_prev').getElementsById("hover").style.opacity = "1";
+//         }
+//         // alert("Hea/llo");
+//     });
+// }
