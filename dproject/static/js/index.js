@@ -9,7 +9,7 @@
 
 let myFlooper = new flooper('.js-flooper', {
     speed: 0.7,
-}); // you can ommit paramenter if used 'js-flooper' in HTML 
+}); // you can ommit paramenter if used 'js-flooper' in HTML
 myFlooper.init();
 
 var slideCount;
@@ -126,7 +126,7 @@ $('#slider').width($('#carousel-testemunhos').outerWidth());
 var maxHeight = 0;
 // loop through all content classes
 for (let content of allContent) {
-    // display the content if the class has the same data-attribute as the button 
+    // display the content if the class has the same data-attribute as the button
 
     $(content).width($('#carousel-testemunhos').outerWidth());
 
@@ -193,7 +193,7 @@ $(window).resize(function () {
     var maxHeight = 0;
     // loop through all content classes
     for (let content of allContent) {
-        // display the content if the class has the same data-attribute as the button 
+        // display the content if the class has the same data-attribute as the button
 
         $(content).width($('#carousel-testemunhos').outerWidth());
 
