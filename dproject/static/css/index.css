@@ -222,18 +222,10 @@ h4 {
 }
 
 #estagios-link {
-<<<<<<< Updated upstream
-    color: #FE508D;
-    font-size: 34px;
-    text-decoration: none;
-    position: relative;
-=======
-  /* font-family: 'Montserrat-SemiBold'; */
   color: #FE508D;
   font-size: 34px;
   text-decoration: none;
   position: relative;
->>>>>>> Stashed changes
 }
 
 #section5 {
@@ -406,12 +398,7 @@ h5 {
   margin-bottom: 37px;
 }
 
-<<<<<<< Updated upstream
-#faqs  {
-=======
-
 #section6 {
->>>>>>> Stashed changes
   margin-top: 150px;
   width: 60%;
   display: flex;
@@ -579,12 +566,23 @@ h5 {
     left: 25px;
   }
 
+  #score-points {
+    position: relative;
+    align-self: center;
+    margin-left: 0;
+    max-width: 800px;
+  }
+
   #score-points p {
     margin-left: auto;
     margin-right: auto;
     width: 87vw;
     position: relative;
     font-size: 20px;
+  }
+
+  #riscos2 {
+    width: 150px;
   }
 
   #section5 h5 {
@@ -600,5 +598,15 @@ h5 {
     color: #ffcc66;
     font-size: 17pt;
     position: relative;
+  }
+
+  #riscos {
+    width: 300px;
+    align-self: flex-start;
+    position: absolute;
+    transform: rotate(95deg);
+    max-height: 70vh;
+    margin: -15vh 0vw 0vh -30vw;
+    object-fit: contain;
 }
 }
