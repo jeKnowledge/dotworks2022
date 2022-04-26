@@ -160,6 +160,9 @@ img.control_prev {
 }
 
 .year {
+    font-family: "source-han-sans-traditional", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 45px;
     color: #2F2F31;
     margin-right: 5vw;
@@ -256,6 +259,18 @@ img.control_prev {
         margin: 0;
         margin-bottom: 32px;
     }
+    
+    .year-container h6{
+        height: 32px;
+        width: 83px;
+        border: 1.5px solid #FFFEF3;
+        border-radius: 13px;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    
+
     #section2 {
         padding: 0 0 72px;
     }

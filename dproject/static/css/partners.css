@@ -12,7 +12,9 @@
 #partners h2 {
     margin: 0;
     font-size: 40px;
-    font-family: 'Montserrat-Bold';
+    font-family: "source-han-sans-traditional", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     color: #5551FF;
     text-align: center;
 }
@@ -58,7 +60,7 @@
     #partners h2 {
         font-size: 24px;
     }
-    
+
     #partners-container {
         padding-top: 30px;
         grid-template-columns: repeat(2, 1fr);

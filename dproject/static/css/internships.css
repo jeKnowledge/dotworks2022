@@ -24,7 +24,7 @@ p{
 
 h1 {
   color: #5551FF;
-  font-size: 43px;
+  font-size: 30px;
   /* font-size: 18px; */
   font-family: "Inter-SemiBold";
   margin: 0;
@@ -36,9 +36,15 @@ h1 {
   margin-right: 3vw;
   background-color: #ebecf6;
   /*position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-    /* required */
+  position: -webkit-sticky;
+  top: 0px;
+  /* required */
+}
+
+.filter-column h1{
+  font-family: "source-han-sans-traditional", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .filter-column, .radios-container {
@@ -47,7 +53,7 @@ h1 {
 }
 
 .radios-container {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .radios-container a {
@@ -58,7 +64,7 @@ h1 {
 /* The area-container */
 
 .filter-container {
-  padding: 9px 0;
+  padding: 3px 0;
   display: flex;
   flex-direction: row;
   align-items: center;

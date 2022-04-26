@@ -189,6 +189,12 @@ video::-webkit-media-controls {
   flex-direction: column;
 }
 
+#section4 h4{
+  font-family: "source-han-sans-traditional", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 #riscos {
   align-self: flex-start;
   position: absolute;
@@ -251,6 +257,18 @@ h4 {
   border-radius: 4px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#section5 #passado-link, h5{
+  font-family: "source-han-sans-traditional", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#section5 h6{
+  font-family: "source-han-sans-traditional", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #slider ul {
@@ -379,7 +397,9 @@ h5 {
 #faqs h2 {
   margin: 0;
   font-size: 40px;
-  font-family: 'Inter-Medium';
+  font-family: "source-han-sans-traditional", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   color: #5551FF;
   text-align: center;
 }
@@ -398,7 +418,7 @@ h5 {
   margin-bottom: 37px;
 }
 
-#section6 {
+#faqs {
   margin-top: 150px;
   width: 60%;
   display: flex;
@@ -508,6 +528,11 @@ h5 {
   /* align-items: center; */
 }
 
+#inscricoes h2{
+  font-family: "source-han-sans-traditional", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
 
 @media screen and (max-width: 760px) {
   #faqs h2 {
