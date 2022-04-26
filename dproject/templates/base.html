@@ -13,7 +13,7 @@
 
   <title>.works 2021</title>
   <link rel="icon" type="image/png" href="{% static 'assets//images/w.png' %}" />
-  
+
   <script>
     (function(d) {
       var config = {
@@ -25,7 +25,7 @@
     })(document);
   </script>
 
-  
+
 </head>
 
 <body>
@@ -35,7 +35,7 @@
       if(n){window.open(window.location.protocol + "/#inscricoes","_self")}
     }
   </script>
-  
+
   <nav class="nav-base" id="my-nav-base">
 
     <a href="{% url 'index' %}"> <img src="{% static 'assets/images/w.png' %}" id="dot-w" /></a>
@@ -63,7 +63,7 @@
     </ul>
     <a href="javascript:getSection(1);" id="inscricoes-nav">INSCRIÇÕES</a>
     <li class="burger">
-    <a href="{% url 'index' %}"> <img src="{% static 'assets/images/w.png' %}" id="dot-w" /></a>
+    <a href="{% url 'index' %}"> <img src="{% static 'assets/images/burger.png' %}" id="dot-w" /></a>
     </li>
   </nav>
   {% block content %}

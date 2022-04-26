@@ -493,6 +493,10 @@ h5 {
   display: flex;
 }
 
+#img-texto2 {
+  display: none;
+}
+
 .inscricoes-anchor {
   padding-top: 90px;
 }
@@ -616,5 +620,10 @@ h5 {
 
   #circulo {
     margin: -14vh 0vw 0vh 27vw;
+  }
+
+
+  #inscricoes-nav {
+    display: none;
   }
 }
