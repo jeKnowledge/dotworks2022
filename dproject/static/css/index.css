@@ -108,8 +108,10 @@ p {
 #score-points {
   position: relative;
   align-self: center;
-  margin-left: 29vw;
-  max-width: 800px;
+  padding-left: 29vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 #score-points h2 {
