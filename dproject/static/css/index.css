@@ -145,7 +145,7 @@ video::-webkit-media-controls {
 #section-grey {
   /* margin-top: 160px; */
   width: 100vw;
-  height: 20vh;
+  height: 128px;
   /* overflow: hidden; */
   background-color: #d7d8dd;
 }
@@ -168,7 +168,7 @@ video::-webkit-media-controls {
 }
 
 .c-my-flooper {
-  padding-top: 60px;
+  padding-top: 32px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -358,6 +358,7 @@ a#next:hover {
   display: table;
   width: 45vw;
   margin-right: auto;
+  text-align: center;
 }
 
 .autor-container {
@@ -417,7 +418,7 @@ h5 {
 }
 
 #faqs {
-  margin-top: 150px;
+  margin: 150px 0;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -625,6 +626,45 @@ h5 {
     max-width: 90vw;
   }
 
+  #slider ul li {
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    flex: center;
+  }
+  
+  #div-amr{
+    transform: rotate(90deg);
+  }
+
+  #div-amr {
+    /* border-left: 5px solid #FFFEF3; */
+    /* height: 224px; */
+    width: auto;
+    
+  }
+  
+  .quote-container p,
+  .quote-autor {
+    display: table-cell;
+    padding: 5px 20px;
+  }
+  
+  .quote-container {
+    /* text-align: center; */
+    width: 72vw;
+  }
+  
+  .quote-autor {
+    /* text-align: right; */
+    font-size: 36px;
+    color: #FFFEF3;
+    /* width: 150px; */
+    padding-right: 43px;
+  }
+
   #passado-link {
     text-decoration: none;
     color: #ffcc66;
@@ -649,5 +689,11 @@ h5 {
 
   #inscricoes-nav {
     display: none;
+  }
+
+  .autor-container {
+    display: table;
+    width: 141px;
+    margin-left: auto;
   }
 }

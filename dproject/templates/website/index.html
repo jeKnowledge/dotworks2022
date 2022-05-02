@@ -18,7 +18,7 @@
     <img src="{% static 'assets/images/text.png' %}" id="date" /></a>
   </div>
   <div>
-    <a href="/#inscricoes" id="inscricoes-botao">INSCREVE-TE!</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqk2y3AJjwVZKy0FEl_efbiTvBwjKhYSY9zQu7NZfYon520Q/viewform?usp=sf_link" target="_blank" id="inscricoes-botao">INSCREVE-TE!</a>
   </div>
 </section>
 
@@ -90,16 +90,16 @@
     <ul>
       {% for testimony in testimonys %}
       <li class="slide">
-      <div class="autor-container">
-        <h6 class="quote-autor">{{testimony.firstName}} {{testimony.lastName}} </h6>
-      </div>
+        <div class="autor-container">
+          <h6 class="quote-autor">{{testimony.firstName}} {{testimony.lastName}} </h6>
+        </div>
 
       <!-- <div class="vl"></div> -->
-      <img src="{% static 'assets/images/divisoria amarela.png' %}"  id="div-amr"/></a>
-      <div class="quote-container">
-        <p class="quote-frase"> {{testimony.test}}</p>
-      </div>
-          </li>
+        <img src="{% static 'assets/images/divisoria amarela.png' %}"  id="div-amr"/></a>
+        <div class="quote-container">
+          <p class="quote-frase"> {{testimony.test}}</p>
+        </div>
+      </li>
           {% endfor %}
         </ul>
     </div>
@@ -126,7 +126,7 @@
     {% endfor %}
   </div>
 </section>
-
+<!-- 
 <section id="section7">
   <div id="inscricoes"  class="inscricoes-anchor">
     <div id="header-inscricoes">
@@ -137,7 +137,7 @@
       <script src="//embed.typeform.com/next/embed.js" ></script>
     </div>
   </div>
-</section>
+</section> -->
 
 <script src="{% static 'js/index.js' %}"></script>
 {% endblock %}

@@ -30,9 +30,8 @@
 
 <body>
   <script>
-    function getSection(n) {
-      if(!n){window.open(window.location.protocol + "/#faqs","_self")}
-      if(n){window.open(window.location.protocol + "/#inscricoes","_self")}
+    function getSection() {
+      window.open(window.location.protocol + "/#faqs","_self")
     }
   </script>
 
@@ -56,12 +55,12 @@
       <!-- <div class="show-later circle"></div> -->
       <!--<div class="show-later circle"></div>-->
       <li id="faq-nav" class="nav-item-container">
-        <a href="javascript:getSection(0);" id="faq-nav" class="nav-item">FAQ</a>
+        <a href="javascript:getSection();" id="faq-nav" class="nav-item">FAQ</a>
         <!-- <img src="{% static 'assets/images/traço menu.png' %}" class="nav-risco" id="nav-risco"/> -->
       </li>
       <!-- <a href="#faqs" id="faq-nav" class="nav-item">FAQ</a> -->
     </ul>
-    <a href="javascript:getSection(1);" id="inscricoes-nav">INSCRIÇÕES</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqk2y3AJjwVZKy0FEl_efbiTvBwjKhYSY9zQu7NZfYon520Q/viewform?usp=sf_link" target="_blank" id="inscricoes-nav">INSCRIÇÕES</a>
     <li class="burger">
     <!-- <a href="{% url 'index' %}"> <img src="{% static 'assets/images/burger.png' %}" id="dot-w" /></a> -->
     <img src="{% static 'assets/images/burger.png' %}" id="dot-w" />
